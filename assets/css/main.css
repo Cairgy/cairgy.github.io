@@ -112,7 +112,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.55);
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
 		line-height: 1.75;
@@ -3001,7 +3001,8 @@ input, select, textarea {
 
 		.spotlights > section > .image {
 			background-position: center center;
-			background-size: cover;
+			background-size: contain;
+			background-repeat: no-repeat;
 			border-radius: 0;
 			display: block;
 			position: relative;
@@ -3252,7 +3253,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #4e81b7;
 		}
 
 		.wrapper.style3-alt {
@@ -3761,7 +3762,7 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e65);
 				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: linear-gradient(to right, #5e42a6, #b74e91);
@@ -3870,14 +3871,19 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
-		background-position: top right;
+		background-image: url("images/intro.svg"), url("images/cg.png");
+		background-position: right bottom;
 		background-repeat: no-repeat;
-		background-size: 100% 100%;
+		background-size: 36% 100%;
+		/* background-blend-mode: lighten; */
 	}
 
 		#intro p {
 			font-size: 1.25em;
+		}
+		
+		#intro span {
+			color: #94bbe9;
 		}
 
 			@media screen and (max-width: 980px) {
