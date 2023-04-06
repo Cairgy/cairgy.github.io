@@ -3882,6 +3882,34 @@ input, select, textarea {
 		#intro p {
 			font-size: 1.25em;
 		}
+
+		.water{
+			position: relative;
+		}
+
+		.water h1{
+			position: absolute;			
+			transform: translate(0%, -100%);
+		}
+
+		.water h1:nth-child(1){
+			color: transparent;
+			-webkit-text-stroke: 0.5px #03a8f4;
+		}
+
+		.water h1:nth-child(2){
+			color: #03a8f4a4;
+			animation: animate 8s ease-in-out infinite;
+		}
+
+		@keyframes animate{
+			0%,100%{
+				clip-path: polygon(0 54%, 7% 58%, 16% 63%, 24% 64%, 33% 64%, 42% 61%, 50% 58%, 58% 52%, 64% 48%, 71% 46%, 79% 44%, 88% 46%, 95% 50%, 100% 55%, 100% 99%, 0 100%);
+			}
+			50%{
+				clip-path: polygon(0 73%, 8% 61%, 16% 53%, 26% 48%, 35% 47%, 42% 51%, 49% 56%, 62% 64%, 68% 65%, 75% 66%, 81% 65%, 87% 62%, 94% 57%, 100% 54%, 100% 99%, 0 100%);
+			}
+		}
 		
 		#intro span {
 			color: #94bbe9;
