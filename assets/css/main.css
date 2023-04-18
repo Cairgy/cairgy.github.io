@@ -3894,12 +3894,12 @@ input, select, textarea {
 
 		.water h1:nth-child(1){
 			color: transparent;
-			-webkit-text-stroke: 0.5px #03a8f4;
+			-webkit-text-stroke: 0.5px #03a8f4e1;
 		}
 
 		.water h1:nth-child(2){
 			color: #03a8f4a4;
-			animation: animate 8s ease-in-out infinite;
+			animation: animate 4s ease-in-out infinite;
 		}
 
 		@keyframes animate{
