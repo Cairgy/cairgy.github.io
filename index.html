@@ -1,211 +1,554 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<html>
-	<head>
-		<title>Kago Mmapetla</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-		<link rel="manifest" href="images/site.webmanifest">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">The Rive App</a></li>
-							<li><a href="#two">Mark Book</a></li>
-							<li><a href="#three">About Kago</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
 
-		<!-- Wrapper -->git status
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
 
-			<div id="wrapper">
+      <title>Kago Mmapetla</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+               Kago <span>Mmapetla</span>
+            </a>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<div class="water">
-								<h1>Kago Mmapetla</h1>
-								<h1>Kago Mmapetla</h1>
-							</div>							
-							<h1>I am a <span class="auto-type"></span></h1>
-								<p>Here is my journey to Data Engineering & DevOps. And this  <br />	
-									repository is my portfolio, basically projects i do, & certificates. <br />								
-								Thanks for stopping by &#128578;						
-							    My <a href="docs/resume.pdf">resume.</a>
-							</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">my projects</a></li>
-							</ul>
-							<img src="images/bi.png" alt="power bi certificate" height="130px"/>
-							<img src="images/azure.png" alt="azure certificate" height="130px"/>
-							<img src="images/data.png" alt="data certificate" height="130px"/>
-						</div>
-					</section>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#home" class="nav__link active-link">Home</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#about" class="nav__link">About</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#services" class="nav__link">Skills</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#projects" class="nav__link">Projects</a>
+                  </li>
+                  <li class="nav__item"> 
+                     <a href="#contact" class="nav__link">Contacts</a>
+                  </li>
+               </ul>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/1.png" alt="app screenshot"/></a>
-							<div class="content">
-								<div class="inner">
-									<h2>The Rive App</h2>
-									<p>The app allows teachers to upload and download past exam papers, letting them to exchange test materials between schools. Previously it
-										was limited to joining WhatsApp groups and exchanging between known contacts.</p>
-									<p>Papers are organized according to subjects and respective classes. Before downloading the app allows you to preview a paper with an inbuilt PDF reader.</p>									
-								</div>
-							</div>
-						</section>
-						<section>							
-							<div class="content">
-								<div class="inner">
-									<h2>Technologies</h2>
-									<p>Developed in Android Studio. Mostly made in Flutter. Java for Android. <br/>
-									   Dev Period: 4weeks (3weeks planning & learning Flutter, 1week coding) <br/>
-									   Documents are hosted on Cloud Firestore, a Google NoSQL document database. <br/>
-									   Uses NoSQL Google Firebase Realtime Database for data manipulation and realtime synchronization.<br/>
-									</p>
-								</div>
-							</div>
-							<a href="#" class="image"><img src="images/2.png" alt="app screenshot" /></a>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/3.png" alt="app screenshot" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Download</h2>
-									<p>The app apk (android) can be downloaded below. It was never launched on iOS since everyone used an Android smartphone. Flutter also allowed
-										releasing the app as a web app but all end-users (teachers) prefered smartphones and never used laptops.
-									</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Download App</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>							
-							<div class="content">
-								<div class="inner">
-									<h2>Code /></h2>
-									<p>The source code is available for free on GitHub. Only the 1st version was ever launched, so as a first flutter project it may not 
-										have some best practices. </p>
-									<ul class="actions">
-										<li><a href="https://github.com/Cairgy/the_rive.git" class="button">View Code</a></li>
-									</ul>
-								</div>
-							</div>
-							<a href="#" class="image"><img src="images/4.png" alt="app screenshot" /></a>
-						</section>
-					</section>
+               <!-- close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div> 
+            
+            <!-- toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+      </header>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Teacher Mark Book</h2>
-							<p>This is a tool that was designed to replace a manual mark book used in schools. Originally, in Education large books are provided to capture students
-								marks in a year, do analysis in another book and students reports on another. The process was long and took days, used a lot of stationery and prone 
-								to errors. Since the Ministry was not ready for an automated Web System an excell tool was the best available choice. </p>  
-							<p>The system capture student marks, calculates performance, produce a result analysis per class, and populates reports for each individual and a continuous 
-								assessment form	for a learner in a year.  </p>
-							<div class="features" style="width: 40%; border-radius: 15px;" >
-								<img src="images/markbook.png" alt="excel" style="width: 100%; height: 100%; border-radius: 15px;" />
-							</div>
-							<ul class="actions">
-								<li><a href="#" class="button">more</a></li>
-							</ul>
-						</div>
-					</section>
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <div class="home__content">
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>About Me</h2>
-							<p>Kago Mmapetla did Bachelor of Science in Information Technology at the University of Botswana. This is his Professional journey. </p>
-							<p>PROFESSIONAL CERTIFICATES<br/>
-								- MICROSOFT CERTIFIED: Power Business Intelligence Data Analyst Associate <br/>
-								- BOTHO UNIVERSITY: Certificate in Network & Server Administration
-							</p>
-							<br/>
-							<div class="split style1">
-								<section>
-										<div class="fields">
-											<div class="field half">
-												<h3>Hire me</h3>
-											<span>(+267) 76557236</span>
-											</div>
-											<div class="field half">
-												<h3></h3>
-											    <span>kgmmapetla2@gmail.com</span>
-											</div>		
-											<div class="field half">
-												<div class="field half">
-													<h3></h3>
-													<ul class="icons">
-														<li><a href="https://facebook.com/Cairgy" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-														<li><a href="https://github.com/Cairgy" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-														<li><a href="https://instagram.com/Cair3y" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-														<li><a href="https://linkedin.com/in/Cairgy" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-														<li><a href="#" class="icon brands fa-tiktok"><span class="label">Tiktok</span></a></li>
-													</ul>
-												</div>
-											</div>									
-										</div>
-																			
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>Block 10<br />
-											Gaborone<br />
-											Botswana</span>
-										</li>
-										
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
+                  <div class="home__data">
+                     <h3 class="home__subtitle">
+                        Hello, <span>I’m</span>
+                     </h3>
 
-			</div>
+                     <h1 class="home__title">Kago</h1>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Kago Mmapetla. All rights reserved. 2023</li>
-					</ul>
-				</div>
-			</footer>
+                     <!-- <h3 class="home__education"></h3> -->
+                     <h3 class="home__education"><span class="auto-type"></h3>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-			<script>
-				var typed = new Typed('.auto-type', {
-				strings: ["Data Analyst", "Data Engineer", "Programmer"],
-				typeSpeed: 140,
-				backSpeed: 40,
-				loop: true
-				});
-			</script>
+                     <p class="home__description">
+                        .. here is my journey in learning new technologies. And this 	
+								 is my portfolio, a repository. Basically projects i do, my skills & certificates. 								
+								Thanks for stopping by &#128578;
+                     </p>
 
-	</body>
+                     <a href="#contact" class="button">Got a job for me?</a>
+                  </div>
+
+                  <div class="home__social">
+                     <a href="https://github.com/Cairgy" target="_blank" class="home__social-link">
+                        <i class="ri-github-fill"></i>
+                     </a>
+                     <a href="https://linkedin.com/in/Cairgy" target="_blank" class="home__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                     </a>
+                     <a href="https://facebook.com/Cairgy" target="_blank" class="home__social-link">
+                        <i class="ri-facebook-box-line"></i>
+                     </a>
+                  </div>
+
+               </div>
+               
+               <div class="home__image">
+                  <svg class="home__blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
+                     <mask id="maskBlob" mask-type="alpha">
+                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+                     </mask>
+                     <g mask="url(#maskBlob)">
+                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+                  
+                        <rect x="37" width="476" height="630" fill="url(#pattern0)"/>
+                     </g>
+                  
+                     <rect x="37" width="476" height="300" fill="url(#pattern1)"/>
+                  
+                     <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <!-- Insert your profile (recommended size: 640 x 940) -->
+                        <image class="home__img" id="imageBlob" width="670" height="925" href="assets/img/kg.png"/>
+                     </defs>
+                  </svg>
+               </div>
+           
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+                  <div class="about__data">
+                     <h3 class="section__subtitle">
+                        My <span>Intro</span>                     
+                     </h3>
+                     <h2 class="section__title">
+                        About Me
+                     </h2>
+                     <p class="about__description">
+                        Well, you can say i never go to work because what i do is my hobby. Currently i'm
+                        learning Azure Cloud preferably Data Engineering, DevOps and Azure Admin.
+                        Besides that i code android apps and web, and have experience administering 
+                        Windows Server and Data Analytics. I enjoy cutting edge technology so i tend to push
+                        and learn almost everything on offer. <br/>
+                        <i>To verify certificates, click on their badges</i>
+                     </p>
+                     
+                     <a href="https://www.credly.com/badges/0fc7f83d-2185-4ea2-95e3-ab83a5a1f1c8/linked_in_profile" target="_blank">
+                        <img src="assets/img/bi.png" alt="power bi certificate"/>
+                     </a>
+							
+							<a href="https://www.credly.com/badges/4717ca89-5031-4d05-aea2-ee502d7a2eeb/linked_in_profile" target="_blank">
+                        <img src="assets/img/azure.png" alt="azure certificate"/>
+                     </a>
+
+                     <a href="https://www.credly.com/badges/4cbe0b26-f0a2-40c2-9e5f-8ec39c6e9333/linked_in_profile" target="_blank">
+                        <img src="assets/img/data.png" alt="data certificate"/>
+                     </a>
+                  </div>
+
+                  <div class="about__image">
+                     <svg class="about__blob" viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="maskBorder" mask-type="alpha">
+                           <path d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
+                           171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
+                           448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
+                           270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
+                           439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z" fill="black"/>
+                        </mask>
+                        <g mask="url(#maskBorder)">
+                           <rect x="37" width="476" height="630" fill="url(#pattern2)"/>
+                           
+                           <path d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
+                           192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
+                           580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
+                           40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
+                           175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black" stroke-width="10"/>
+                        </g>
+                     
+                        <rect x="37" width="476" height="300" fill="url(#pattern3)"/>
+                     
+                        <defs>
+                           <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                              <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
+                           </pattern>
+                     
+                           <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                              <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
+                           </pattern>
+                     
+                           <!-- Insert your profile (recommended size: 640 x 940) -->
+                           <image class="about__img" id="imageBorder" width="670" height="940" href="assets/img/kg.png"/>
+                        </defs>
+                     </svg>
+                  </div>
+            </div>
+            
+         </section>
+
+         <!--==================== SKILLS ====================-->
+         <section class="skills section">
+            <div class="skills__container container container grid">
+               <div class="skills__data">
+                  <h3 class="section__subtitle">
+                     Favorite <span>Skills</span>
+                  </h3>
+
+                  <h2 class="section__title">
+                     My SKills
+                  </h2>
+
+                  <p class="skills__description">
+                     In addition to Data Analytics and Developer skills, here are some my technical expertise
+                     that can help summarize my abilities.
+                  </p>         
+                  <a href="#" class="button">See Resume</a>         
+               </div>
+
+               <div class="skills__content">
+                  <ol class="skills__group">
+                     <li class="skills__item">Azure Cloud Services</li>
+                     <li class="skills__item">Microsoft Power BI</li>
+                     <li class="skills__item">Power Platform</li>
+                     <li class="skills__item">Active Directory 2016</li>
+                     <li class="skills__item">Firebase, MongoDB, MySQL</li>
+                  </ol>
+                   
+                  <ol class="skills__group" start="6">
+                     <li class="skills__item">Android App Development</li>
+                     <li class="skills__item">Flutter, Java, Node.js,</li>
+                     <li class="skills__item">Python, JavaScript</li>
+                     <li class="skills__item">Git & GitHub, Bootstrap</li>
+                     <li class="skills__item">Linux Environment</li>
+                  </ol>
+               </div>
+            </div>
+            
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section" id="services">       
+            <h3 class="section__subtitle">
+               My <span>Services</span>
+            </h3>    
+            
+            <h2 class="section__title">
+               What I Do
+            </h2>
+
+            <div class="services__container container grid">
+               <article class="services__card">
+                  <i class="ri-layout-3-line services_icon"></i>
+                  <h2 class="services__title">Data Analyst</h2> 
+                                        
+                  <p class="services__description">
+                     Development of custom web pages. 
+                     Using current technologies and 
+                     libraries of the labor field.
+                  </p>
+               </article>
+               
+               <article class="services__card">
+                  <i class="ri-layout-3-line services_icon"></i>
+                  <h2 class="services__title">Programmer</h2>       
+                  
+                  <p class="services__description">
+                     I offer design of web interfaces and 
+                     mobile applications, design made in 
+                     figma, adobe xd and sketch.
+                  </p>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-layout-3-line services_icon"></i>
+                  <h2 class="services__title">App Developer</h2>       
+                  
+                  <p class="services__description">
+                     I make designs at the client's request, 
+                     banner design, posters, digital 
+                     designs among others.
+                  </p>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== PROJECT 1 ====================-->
+         <section class="projects section" id="projects">
+            <h3 class="section__subtitle">
+               My <span>Work</span>
+            </h3>
+
+            <h2 class="section__title">
+               The Rive App
+            </h2>
+
+            <div class="apps__container container grid">
+              <div class="apps_item1">
+               <img src="assets/img/1.png" alt="app screenshot"/>
+              </div>
+              <div class="apps_item2">
+               <img src="assets/img/2.png" alt="app screenshot"/>
+              </div>
+              <div class="apps_item3">
+               <img src="assets/img/3.png" alt="app screenshot"/>
+              </div>
+              <div class="apps_item4">
+               <img src="assets/img/4.png" alt="app screenshot"/>
+              </div>
+              <div class="apps_item5">
+               <p>Drive(the Rive) is Developed using Android Studio. Languages include Flutter & Java for Android. 
+                  Google firebase Realtime Database for data manipulation. Documents(PDFs) on Cloud Firestore, a 
+                  Google NoSQL document database. Duration: 4 weeks (3 weeks design, 1 week coding).
+                  Source Code on GitHub. </p>
+              </div>
+            </div>
+
+            <!-- <div class="projects__container container grid">
+               <article class="projects__card">
+                  <img src="assets/img/project-img-1.jpg" alt="projects image" class="projects__img">
+                  
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Modern Website</h2>
+
+                     <a href="#" class="projects__button">
+                        View Demo <i class="ri-external-link-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/project-img-2.jpg" alt="projects image" class="projects__img">
+                  
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Modern Website</h2>
+
+                     <a href="#" class="projects__button">
+                        View Demo <i class="ri-external-link-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/project-img-3.jpg" alt="projects image" class="projects__img">
+                  
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Modern Website</h2>
+
+                     <a href="#" class="projects__button">
+                        View Demo <i class="ri-external-link-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/project-img-4.jpg" alt="projects image" class="projects__img">
+                  
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Modern Website</h2>
+
+                     <a href="#" class="projects__button">
+                        View Demo <i class="ri-external-link-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/project-img-5.jpg" alt="projects image" class="projects__img">
+                  
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Modern Website</h2>
+
+                     <a href="#" class="projects__button">
+                        View Demo <i class="ri-external-link-line"></i>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/project-img-6.jpg" alt="projects image" class="projects__img">
+                  
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">Web</span>
+
+                     <h2 class="projects__title">Modern Website</h2>
+
+                     <a href="#" class="projects__button">
+                        View Demo <i class="ri-external-link-line"></i>
+                     </a>
+                  </div>
+               </article>
+            </div> -->
+         
+         </section>
+
+         <!--==================== PROJECT 2 ====================-->
+         <section class="services section">       
+            <h3 class="section__subtitle">
+               An <span>Excel System</span>
+            </h3>    
+            
+            <h2 class="section__title">
+               Mark Book
+            </h2>
+
+            <div class="mark__container container grid">
+               <div class="services__card">
+                  <img src="assets/img/markbook.png" alt="app screenshot"/>
+               </div>
+               
+               <div class="services__card">
+                  <h2 class="services__title">Student Analysis Mark Book</h2>                         
+                  <p class="services__description">
+                     The system, made in Excel, captures student marks, calculates class performance, produces a subject analysis,
+                     result analysis per class, and an overall school analysis.<br/>
+                     It creates automated reports for each student and compiles a continuous assessment for each learner per term in that year.                     
+                  </p><br />
+                  <p>
+                     The tool was designed as a replacement for a traditional manual Mark Book used in primary schools. The traditional
+                     method consisted of four books for capturing data, a tedious work that lasted a week, used a lot of stationery
+                      and very prone to errors.
+                  </p>
+               </div>
+
+            </div>
+         </section>
+
+         <!--==================== PROJECT 3 ====================-->
+         <section class="skills section">
+            <h3 class="section__subtitle">
+               A <span>Blog App</span>
+            </h3>    
+            
+            <h2 class="section__title">
+               Cairgy Notes
+            </h2>
+            <div class="skills__container container container grid">
+               <div class="skills__data">
+                  <p class="skills__description">
+                     ..to be updated.
+                  </p>         
+                  <a href="https://github.com/Cairgy/blogapp" class="button">view Code /> </a>         
+               </div>
+
+               <div class="skills__content">
+                  
+               </div>
+            </div>
+            
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <h3 class="section__subtitle">
+               kgmmapetla2<span>@gmail.com</span>
+            </h3>
+
+            <h2 class="section__title">
+               Talk to Me
+            </h2>
+
+            <div class="contact__container container grid">
+               <form action="" class="contact__form" id="contact-form">
+                  <div class="contact__group">
+                     <input type="text" name="user_name" required placeholder="Name" class="contact__input">
+                     <input type="email" name="user_email" required placeholder="Email" class="contact__input">
+                  </div>
+
+                  <textarea name="user_project" required placeholder="Write message" class="contact__input"></textarea>
+
+                  <p class="contact__message" id="contact-message"></p>
+
+                  <button type="Submit" class="button contact__button">
+                     Send Message
+                  </button>
+               </form>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div>
+               <h1 class="footer__title">
+                  Kago <span>Mmapetla</span>
+               </h1>
+   
+               <h2 class="footer__education">
+                  Freelancer
+               </h2>
+            </div>            
+
+            <div class="footer__social">
+               <a href="#" target="_blank" class="footer__social-link">
+                  <i class="ri-facebook-circle-line"></i>
+               </a>
+               <a href="#" target="_blank" class="footer__social-link">
+                  <i class="ri-instagram-line"></i>                  
+               </a>
+               <a href="#" target="_blank" class="footer__social-link">
+                  <i class="ri-twitter-line"></i>                  
+               </a>
+            </div>
+
+            <span class="footer__copy">
+               &#169; Copyright Kago Mmapetla 2023. All Rights Reserved
+            </span>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== EMAIL JS ===============-->
+      
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+
+      <!--=============== TYPED JS ===============-->
+      <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+      <script>
+         var typed = new Typed('.auto-type', {
+         strings: ["a Data Analyst", "an App Developer", "and i Freelance"],
+         typeSpeed: 140,
+         backSpeed: 40,
+         loop: true
+         });
+      </script>
+   </body>
 </html>
