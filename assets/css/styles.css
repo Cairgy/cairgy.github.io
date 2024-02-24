@@ -471,6 +471,22 @@ svg {
   max-width: 1000px;
 }
 
+.onepic__container{
+  display: grid;
+  row-gap: 1rem;
+  padding-block: 1rem;
+  grid-template-columns: auto;
+  max-width: 1120px;
+}
+
+.twopics__container{
+  display: grid;
+  row-gap: 1rem;
+  padding-block: 1rem;
+  grid-template-columns: auto auto;
+  max-width: 1120px;
+}
+
 .apps__container p{
   padding-left: 1rem;
   /* font-size: smaller; */
